@@ -1,0 +1,24 @@
+# Site settings
+title: CUPS
+description: Cambridge University Poker Society
+url: "https://cups.cam"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Theme settings (using minima as base, can be customized)
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
