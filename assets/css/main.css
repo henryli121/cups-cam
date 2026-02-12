@@ -127,17 +127,60 @@ body {
 .site-footer {
   background-color: #1a1a2e;
   color: rgba(255, 255, 255, 0.8);
-  padding: 40px 0;
-  text-align: center;
+  padding: 50px 0 30px;
 }
 
 .site-footer a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .site-footer .social-links {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .site-footer .social-links a {
@@ -149,6 +192,11 @@ body {
 
 .site-footer .social-links a:hover {
   opacity: 0.7;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  margin: 0;
 }
 
 /* Typography */
@@ -231,5 +279,15 @@ strong {
   
   .wrapper {
     padding: 0 16px;
+  }
+  
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .footer-col h4 {
+    margin-bottom: 15px;
   }
 }

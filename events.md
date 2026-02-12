@@ -1,6 +1,6 @@
 ---
 layout: page
-title: What We Do
+title: Events
 permalink: /events/
 ---
 
@@ -15,7 +15,3 @@ Join our seasonal photography contest! Capture the festive spirit of Cambridge a
 - **Photowalks**: Explore Cambridge and capture its beauty
 - **Workshops**: Learn new photography techniques
 - **Exhibitions**: Showcase your work
-
-### Past Events
-
-*Check back for highlights from our events*

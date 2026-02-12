@@ -18,7 +18,3 @@ To provide a welcoming environment for students to explore, learn, and share the
 - Photowalks around Cambridge and beyond
 - Exhibitions and showcases
 - Social events and community building
-
-### Committee
-
-*Committee members coming soon*
