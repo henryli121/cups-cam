@@ -6,22 +6,20 @@ permalink: /join/
 
 ## Join CUPS
 
-Interested in joining Cambridge University Poker Society?
+Interested in joining Cambridge University Photography Society?
 
 ### Membership
 
-*Add membership details here*
+We welcome all University of Cambridge students, regardless of experience level or equipment.
 
 ### How to Sign Up
 
-1. *Add sign-up instructions*
-2. *Payment details if applicable*
-3. *What you get with membership*
+*Membership details coming soon*
 
 ### FAQ
 
-**Do I need experience to join?**
-No! We welcome players of all skill levels.
+**Do I need a professional camera?**
+No! Whether you use a DSLR, mirrorless camera, or just your phone, you're welcome to join.
 
-**How much does membership cost?**
-*Add cost details*
+**Do I need prior photography experience?**
+Not at all! We welcome beginners and experienced photographers alike.

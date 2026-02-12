@@ -1,18 +1,21 @@
 ---
 layout: page
-title: Events
+title: What We Do
 permalink: /events/
 ---
 
-## Upcoming Events
+## What We Do
 
-Check back soon for our upcoming poker events!
+### Christmas Photography Contest
 
-### Regular Schedule
+Join our seasonal photography contest! Capture the festive spirit of Cambridge and share your best shots.
 
-- **Weekly Games**: Every [day] at [time], [location]
-- **Tournaments**: [frequency]
+### Regular Activities
+
+- **Photowalks**: Explore Cambridge and capture its beauty
+- **Workshops**: Learn new photography techniques
+- **Exhibitions**: Showcase your work
 
 ### Past Events
 
-*Add past event highlights here*
+*Check back for highlights from our events*

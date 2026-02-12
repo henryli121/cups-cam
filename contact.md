@@ -1,22 +1,19 @@
 ---
 layout: page
-title: Contact
+title: Contact Us
 permalink: /contact/
 ---
 
 ## Contact Us
 
-Get in touch with CUPS!
-
-### Email
-
-*Add email address*
+Get in touch with Cambridge University Photography Society!
 
 ### Social Media
 
-- Instagram: *Add handle*
-- Facebook: *Add link*
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/)
 
-### Committee Contacts
+Follow us on Instagram for the latest updates, member photos, and event announcements.
 
-*Add committee contact information*
+### Email
+
+*Contact email coming soon*

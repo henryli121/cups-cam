@@ -3,15 +3,10 @@ layout: home
 title: Home
 ---
 
-# Welcome to CUPS
+# Cambridge University Photography Society (CUPS)
 
-Cambridge University Poker Society (CUPS) is the official poker society at the University of Cambridge.
+Established in 2025, CUPS aims to foster a creative and inclusive community for all University of Cambridge students interested in photography, whether using professional cameras or mobile phones.
 
-Whether you're a complete beginner or an experienced player, we welcome everyone who wants to learn, play, and enjoy poker in a friendly environment.
+## What We Do
 
-## What We Offer
-
-- **Weekly Games**: Regular poker nights for all skill levels
-- **Tournaments**: Competitive events throughout the term
-- **Lessons**: Learn poker strategy from experienced players
-- **Social Events**: Meet fellow poker enthusiasts
+We organize photography workshops, photowalks, exhibitions, and social events to help members develop their skills and share their passion for photography.
