@@ -64,21 +64,131 @@ body {
   background-color: #fff;
 }
 
-.home {
+/* Screensaver overlay */
+#screensaver {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
+}
+
+#screensaver::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+#screensaver.dimmed {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease-out;
+}
+
+/* Screensaver title */
+#screensaver-title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
   text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  max-width: 80vw;
 }
 
-.home h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-  color: #1a1a2e;
+#screensaver-title span {
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-.home p {
-  font-size: 1.1rem;
-  color: #555;
+#screensaver-title span.visible {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  #screensaver-title {
+    font-size: 1.6rem;
+    top: 12%;
+    max-width: 85vw;
+  }
+}
+
+/* Hero section with background image */
+.hero {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 40px 24px;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content h2 {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
   max-width: 600px;
   margin: 0 auto 1.5rem;
+  line-height: 1.8;
+}
+
+.hero-content ul {
+  list-style: none;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-content li {
+  margin-bottom: 0.5em;
 }
 
 /* Page and post styles */
@@ -99,6 +209,19 @@ body {
   font-size: 0.9rem;
 }
 
+/* News section */
+.news-section {
+  background-color: #1a1a2e;
+  padding: 50px 0;
+}
+
+.news-section .post-list-heading {
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 /* Post list */
 .post-list {
   list-style: none;
@@ -107,20 +230,24 @@ body {
 .post-list li {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .post-list h3 {
   margin-top: 5px;
 }
 
+.news-section .post-meta {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .post-link {
-  color: #2c3e50;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
 }
 
 .post-link:hover {
-  color: #3498db;
+  color: #fff;
 }
 
 /* Footer */
@@ -273,8 +400,17 @@ strong {
     font-size: 0.9rem;
   }
   
-  .home h1 {
-    font-size: 1.7rem;
+  .hero {
+    aspect-ratio: auto;
+    min-height: 70vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
   }
   
   .wrapper {

@@ -6,11 +6,15 @@
 <body>
   {% include header.html %}
   
+  {% if page.layout == 'home' %}
+  {{ content }}
+  {% else %}
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       {{ content }}
     </div>
   </main>
+  {% endif %}
 
   {% include footer.html %}
 </body>
