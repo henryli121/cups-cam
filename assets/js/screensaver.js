@@ -15,15 +15,38 @@
   var titleEl = null;
   var isActive = true;
   var revealTimer = null;
+  var hero = null;
+
+  function isMobileViewport() {
+    return window.matchMedia('(max-width: 820px)').matches;
+  }
+
+  function getScreensaverImage() {
+    if (!hero) return '';
+
+    var desktopImage = hero.getAttribute('data-bg-desktop');
+    var mobileImage = hero.getAttribute('data-bg-mobile');
+
+    if (isMobileViewport() && mobileImage) {
+      return mobileImage;
+    }
+
+    return desktopImage || '';
+  }
+
+  function applyScreensaverBackground() {
+    var image = getScreensaverImage();
+    if (image) {
+      screensaver.style.backgroundImage = 'url("' + image + '")';
+    }
+  }
 
   function createScreensaver() {
     screensaver = document.createElement('div');
     screensaver.id = 'screensaver';
 
-    var hero = document.querySelector('.hero');
-    if (hero) {
-      screensaver.style.backgroundImage = hero.style.backgroundImage;
-    }
+    hero = document.querySelector('.hero');
+    applyScreensaverBackground();
 
     titleEl = document.createElement('div');
     titleEl.id = 'screensaver-title';
@@ -37,7 +60,7 @@
     titleEl.innerHTML = '';
     for (var i = 0; i < TITLE_TEXT.length; i++) {
       var span = document.createElement('span');
-      span.textContent = TITLE_TEXT[i] === ' ' ? '\u00A0' : TITLE_TEXT[i];
+      span.textContent = TITLE_TEXT[i];
       titleEl.appendChild(span);
     }
   }
@@ -96,6 +119,9 @@
     events.forEach(function (evt) {
       document.addEventListener(evt, resetIdleTimer, { passive: true });
     });
+
+    window.addEventListener('resize', applyScreensaverBackground, { passive: true });
+    window.addEventListener('orientationchange', applyScreensaverBackground, { passive: true });
   }
 
   if (document.readyState === 'loading') {

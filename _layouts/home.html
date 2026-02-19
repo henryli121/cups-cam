@@ -1,7 +1,16 @@
 ---
 layout: default
 ---
-<div class="hero" style="background-image: url('{{ '/assets/images/site/background.jpg' | relative_url }}');">
+<div
+  class="hero"
+  data-bg-desktop="{{ '/assets/images/site/background.jpg' | relative_url }}"
+  data-bg-mobile="{{ '/assets/images/site/background_mobile.JPG' | relative_url }}"
+  style="
+    --hero-bg-desktop: url('{{ '/assets/images/site/background.jpg' | relative_url }}');
+    --hero-bg-mobile: url('{{ '/assets/images/site/background_mobile.JPG' | relative_url }}');
+    background-image: var(--hero-bg-desktop);
+  "
+>
   <div class="hero-overlay">
     <div class="hero-content">
       {{ content }}
